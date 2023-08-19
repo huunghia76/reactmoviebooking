@@ -1,0 +1,67 @@
+.MovieBooking{
+    position: relative;
+    z-index: 999;
+}
+.Chair {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: #ffffff4d;
+    color: blue;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(194, 189, 189, 0.993);
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.booking {
+        background-color: red !important;
+        border: transparent;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    &.booked {
+        background-color: rgb(0, 0, 0) !important;
+        border: transparent;
+        color: white;
+        pointer-events: none; // chặn event click vào nút
+        font-weight: bold;
+    }
+
+    &.disabled {
+        border: transparent !important;
+        pointer-events: none; // chặn event click vào nút
+        background: #ffffff00 !important;
+        font-weight: bold;
+        color: #FFDC0F;
+    }
+}
+
+.Result {
+    color: #fff;
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    .table{
+        color: #fff;
+    }
+
+}
+
+.Manhinh {
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+    -webkit-box-shadow: -1px 18px 36px -9px #FFDC0F;
+    box-shadow: -1px 18px 36px -9px #FFDC0F;
+}
+.HangGhe{
+    color: #FFDC0F;
+}
